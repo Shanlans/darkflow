@@ -126,6 +126,16 @@ class leaky(BaseOp):
 
 	def verbalise(self): pass
 
+class relu(BaseOp):
+	def forward(self):
+		self.out = tf.maximum(
+			self.inp.out, 
+			self.inp.out, 
+			name = self.scope
+		)
+
+	def verbalise(self): pass
+
 
 class identity(BaseOp):
 	def __init__(self, inp):

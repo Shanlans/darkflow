@@ -1,5 +1,3 @@
-import tensorflow as tf
-
 _LOSS_TYPE = ['sse','l2', 'smooth',
 			  'sparse', 'l1', 'softmax',
 			  'svm', 'fisher']
